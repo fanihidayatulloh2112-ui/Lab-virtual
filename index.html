@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -61,37 +60,13 @@
             border: 2px solid #cbd5e1;
         }
 
-        /* Gaya Gelas Kimia (Beaker) untuk Kanvas */
+        /* Gaya Kotak Eksperimen Balon */
         .beaker-container {
-            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(224,242,254,0.7) 100%);
+            background: radial-gradient(circle at 50% 35%, #ffffff 0%, #e0f2fe 70%, #bae6fd 100%);
             border: 6px solid #38bdf8;
-            border-top: 10px solid #0284c7;
-            border-radius: 12px 12px 32px 32px;
-            box-shadow: inset 0 0 25px rgba(56, 189, 248, 0.2), 0 12px 25px -5px rgba(0, 0, 0, 0.1);
+            border-radius: 36px;
+            box-shadow: inset 0 0 30px rgba(56, 189, 248, 0.25), 0 12px 25px -5px rgba(0, 0, 0, 0.1);
             position: relative;
-        }
-
-        /* Garis Takaran Gelas Kimia */
-        .beaker-marks {
-            position: absolute;
-            right: 16px;
-            top: 20%;
-            bottom: 15%;
-            width: 28px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            pointer-events: none;
-            opacity: 0.45;
-            z-index: 10;
-        }
-        .beaker-mark {
-            border-bottom: 3px solid #0284c7;
-            font-size: 11px;
-            font-weight: 800;
-            color: #0369a1;
-            text-align: right;
-            padding-bottom: 2px;
         }
 
         /* Tombol 3D Kartun */
@@ -114,65 +89,65 @@
         <div class="absolute -bottom-10 -right-10 w-44 h-44 bg-pink-300 rounded-full opacity-50 pointer-events-none"></div>
 
         <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-100 text-amber-700 font-extrabold text-sm md:text-base border-2 border-amber-300 mb-4 shadow-sm">
-            <span>👩‍🔬</span> Laboratorium Sains Virtual Anak <span>👨‍🔬</span>
+            <span>🎈</span> Laboratorium Sains Balon Ajaib <span>👩‍🔬</span>
         </div>
 
         <h1 class="text-4xl md:text-6xl font-title font-bold text-sky-600 mb-3 drop-shadow-sm">
-            Petualangan Wujud Zat!
+            Eksperimen Balon Wujud Zat!
         </h1>
 
         <p class="text-base md:text-lg text-slate-600 max-w-2xl mb-8 font-semibold">
-            Halo Ilmuwan Cilik! Yuk, kita amati bagaimana bola-bola partikel bergerak di dalam benda <span class="text-sky-600 font-extrabold">Padat</span>, <span class="text-teal-600 font-extrabold">Cair</span>, dan <span class="text-rose-500 font-extrabold">Gas</span>!
+            Halo Ilmuwan Cilik! Yuk, masukkan benda <span class="text-sky-600 font-extrabold">Padat</span>, <span class="text-teal-600 font-extrabold">Cair</span>, dan <span class="text-rose-500 font-extrabold">Gas</span> ke dalam <span class="text-purple-600 font-extrabold">Balon Karet</span> dan amati bagaimana partikelnya bergerak!
         </p>
 
-        <!-- Kartu Informasi 3 Wujud Zat -->
+        <!-- Kartu Informasi 3 Wujud Zat dalam Balon -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full mb-8 text-left">
             <div class="bg-sky-50 p-5 rounded-3xl border-4 border-sky-200 shadow-sm hover:scale-105 transition-transform">
                 <div class="flex items-center gap-3 mb-2">
                     <span class="text-4xl bg-white p-2 rounded-2xl shadow-sm border border-sky-100">🧊</span>
-                    <h3 class="text-xl font-title font-bold text-sky-700">Zat Padat</h3>
+                    <h3 class="text-xl font-title font-bold text-sky-700">Balon Padat</h3>
                 </div>
-                <p class="text-sm text-slate-600 font-semibold leading-relaxed">Bola partikelnya berbaris sangat rapi, rapat, dan saling berpegangan erat sambil bergetar kecil!</p>
+                <p class="text-sm text-slate-600 font-semibold leading-relaxed">Jika balon diisi es batu atau kelereng, bentuknya tetap keras saat dipencet karena partikelnya berbaris rapat dan mengunci!</p>
             </div>
 
             <div class="bg-teal-50 p-5 rounded-3xl border-4 border-teal-200 shadow-sm hover:scale-105 transition-transform">
                 <div class="flex items-center gap-3 mb-2">
-                    <span class="text-4xl bg-white p-2 rounded-2xl shadow-sm border border-teal-100">🧃</span>
-                    <h3 class="text-xl font-title font-bold text-teal-700">Zat Cair</h3>
+                    <span class="text-4xl bg-white p-2 rounded-2xl shadow-sm border border-teal-100">💧</span>
+                    <h3 class="text-xl font-title font-bold text-teal-700">Balon Air (Cair)</h3>
                 </div>
-                <p class="text-sm text-slate-600 font-semibold leading-relaxed">Bola partikelnya mulai longgar dan suka meluncur mengikuti bentuk gelas wadahnya!</p>
+                <p class="text-sm text-slate-600 font-semibold leading-relaxed">Balon berisi air terasa kenyal! Partikel air mudah meluncur mengikuti lekukan balon, tapi ukurannya tetap tidak bisa dimampatkan.</p>
             </div>
 
             <div class="bg-rose-50 p-5 rounded-3xl border-4 border-rose-200 shadow-sm hover:scale-105 transition-transform">
                 <div class="flex items-center gap-3 mb-2">
                     <span class="text-4xl bg-white p-2 rounded-2xl shadow-sm border border-rose-100">🎈</span>
-                    <h3 class="text-xl font-title font-bold text-rose-600">Zat Gas</h3>
+                    <h3 class="text-xl font-title font-bold text-rose-600">Balon Udara (Gas)</h3>
                 </div>
-                <p class="text-sm text-slate-600 font-semibold leading-relaxed">Bola partikelnya terbang bebas dengan super cepat ke segala arah memenuhi ruangan!</p>
+                <p class="text-sm text-slate-600 font-semibold leading-relaxed">Partikel udara terbang menabrak dinding karet sehingga balon mengembang! Balon ini sangat empuk saat ditekan.</p>
             </div>
         </div>
 
         <!-- Tombol Pilihan Menu Praktikum -->
         <div class="flex flex-col sm:flex-row gap-5 w-full justify-center">
             <button id="btn-menu-properties" class="btn-cartoon flex-1 py-4 px-6 bg-purple-500 hover:bg-purple-400 text-white font-title font-bold text-xl rounded-3xl border-purple-700 shadow-xl flex items-center justify-center gap-4">
-                <span class="text-4xl bg-white/20 p-3 rounded-2xl">🧪</span>
+                <span class="text-4xl bg-white/20 p-3 rounded-2xl">🎈</span>
                 <div class="text-left">
-                    <div>1. Lab Sifat Benda</div>
-                    <div class="text-xs font-sans font-semibold text-purple-100">Tekan pendorong & miringkan gelas!</div>
+                    <div>1. Lab Sifat Balon Zat</div>
+                    <div class="text-xs font-sans font-semibold text-purple-100">Pencet & goyangkan balon berisi zat!</div>
                 </div>
             </button>
 
             <button id="btn-menu-particles" class="btn-cartoon flex-1 py-4 px-6 bg-amber-500 hover:bg-amber-400 text-white font-title font-bold text-xl rounded-3xl border-amber-700 shadow-xl flex items-center justify-center gap-4">
                 <span class="text-4xl bg-white/20 p-3 rounded-2xl">🌡️</span>
                 <div class="text-left">
-                    <div>2. Lab Suhu Partikel</div>
-                    <div class="text-xs font-sans font-semibold text-amber-100">Panaskan & dinginkan partikel!</div>
+                    <div>2. Lab Suhu & Partikel Zat</div>
+                    <div class="text-xs font-sans font-semibold text-amber-100">Panaskan & dinginkan zat di gelas ukur!</div>
                 </div>
             </button>
         </div>
     </div>
 
-    <!-- HALAMAN 2: LAB SUHU PARTIKEL -->
+    <!-- HALAMAN 2: LAB SUHU & PARTIKEL ZAT (VERSI GELAS KIMIA) -->
     <div id="simulation-screen" class="hidden w-full max-w-6xl bg-white/95 backdrop-blur-md rounded-[2.5rem] p-5 md:p-8 shadow-2xl border-4 border-amber-300 flex-col gap-5">
         
         <!-- Baris Atas (Header) -->
@@ -181,11 +156,11 @@
                 <span>🏠</span> Menu Utama
             </button>
             <div class="flex items-center gap-2">
-                <span class="text-3xl">🌡️</span>
+                <span class="text-3xl">🔬</span>
                 <h2 class="text-2xl md:text-3xl font-title font-bold text-amber-600">Lab Suhu & Gerak Partikel</h2>
             </div>
             <div class="hidden md:block text-sm font-bold text-sky-600 bg-sky-50 px-4 py-2 rounded-xl border border-sky-200">
-                💡 Tips: Geser pengatur suhu di kiri bawah!
+                💡 Geser suhu di bawah untuk melihat perubahan wujud!
             </div>
         </div>
 
@@ -194,7 +169,7 @@
             <div class="w-full lg:w-1/3 flex flex-col gap-4 justify-between bg-amber-50/70 p-5 rounded-3xl border-2 border-amber-200">
                 <div>
                     <h3 class="text-lg font-title font-bold text-slate-700 mb-1">1. Pilih Wujud Benda:</h3>
-                    <p class="text-xs text-slate-500 font-bold mb-3">Klik salah satu tombol di bawah ini</p>
+                    <p class="text-xs text-slate-500 font-bold mb-3">Klik tombol untuk mengganti wujud zat langsung</p>
                     
                     <div class="flex flex-col gap-3">
                         <button id="btn-solid" class="btn-cartoon w-full py-3 px-4 rounded-2xl font-extrabold text-white bg-sky-500 border-sky-700 flex items-center justify-between shadow-md">
@@ -202,7 +177,7 @@
                             <span class="text-xs bg-white/25 px-2.5 py-1 rounded-lg">-50 °C</span>
                         </button>
                         <button id="btn-liquid" class="btn-cartoon w-full py-3 px-4 rounded-2xl font-extrabold text-slate-700 bg-white border-slate-300 flex items-center justify-between shadow-sm">
-                            <span class="flex items-center gap-2 text-lg"><span>💧</span> Air Minum (Cair)</span>
+                            <span class="flex items-center gap-2 text-lg"><span>💧</span> Air (Cair)</span>
                             <span class="text-xs bg-slate-100 px-2.5 py-1 rounded-lg">40 °C</span>
                         </button>
                         <button id="btn-gas" class="btn-cartoon w-full py-3 px-4 rounded-2xl font-extrabold text-slate-700 bg-white border-slate-300 flex items-center justify-between shadow-sm">
@@ -214,46 +189,50 @@
 
                 <!-- Kotak Penjelasan Ramah Anak -->
                 <div id="sim-info-box" class="bg-white p-4 rounded-2xl border-2 border-sky-200 shadow-sm">
-                    <div class="font-title font-bold text-sky-600 text-base mb-1" id="sim-info-title">🧊 Sedang Mengamati: Padat</div>
+                    <div class="font-title font-bold text-sky-600 text-base mb-1" id="sim-info-title">🧊 Sedang Mengamati: Es Batu (Padat)</div>
                     <p class="text-xs text-slate-600 font-semibold leading-relaxed" id="sim-info-desc">
-                        Lihat! Karena dingin, bola-bola partikel kedinginan dan saling berpelukan erat di dasar gelas.
+                        Bola-bola partikel berbaris sangat rapi, saling berpegangan erat, dan hanya bergetar kecil di tempatnya!
                     </p>
                 </div>
 
                 <!-- Pengatur Suhu -->
                 <div class="bg-white p-4 rounded-2xl border-2 border-amber-300 shadow-sm">
                     <div class="flex justify-between items-center mb-2">
-                        <span class="font-title font-bold text-slate-700">2. Atur Suhu Kompor:</span>
+                        <span class="font-title font-bold text-slate-700">2. Atur Suhu Kompor/Pendingin:</span>
                         <span id="temp-display" class="text-lg font-title font-bold px-3 py-1 rounded-xl bg-sky-100 text-sky-700 border border-sky-300">-50 °C</span>
                     </div>
                     <input type="range" id="temp-slider" min="-100" max="200" value="-50">
                     <div class="flex justify-between text-xs font-extrabold mt-2">
-                        <span class="text-sky-600">❄️ Membeku (-100°C)</span>
+                        <span class="text-sky-600">❄️ Beku (-100°C)</span>
                         <span class="text-rose-600">🔥 Mendidih (200°C)</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Area Gelas Kimia Kanvas (Kanan) -->
+            <!-- Area Kanvas Gelas Kimia (Kanan) -->
             <div class="w-full lg:w-2/3 flex flex-col items-center">
-                <div id="canvas-container" class="beaker-container w-full h-[360px] md:h-[440px] overflow-hidden">
-                    <div class="beaker-marks">
-                        <div class="beaker-mark">400 ml</div>
-                        <div class="beaker-mark">300 ml</div>
-                        <div class="beaker-mark">200 ml</div>
-                        <div class="beaker-mark">100 ml</div>
+                <div id="canvas-container" class="beaker-container w-full h-[380px] md:h-[450px] overflow-hidden">
+                    <!-- Garis Takaran Gelas Kimia (Beaker Markings) -->
+                    <div class="absolute right-4 top-1/4 flex flex-col gap-10 text-sky-500/60 font-extrabold text-xs pointer-events-none select-none text-right">
+                        <span>400 ml ──</span>
+                        <span>300 ml ──</span>
+                        <span>200 ml ──</span>
+                        <span>100 ml ──</span>
+                    </div>
+                    <div class="absolute top-3 left-4 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full border-2 border-sky-200 text-xs font-extrabold text-sky-700 z-10 shadow-sm">
+                        🔍 Mikroskop Partikel Aktif
                     </div>
                     <canvas id="simulationCanvas" class="w-full h-full block"></canvas>
                 </div>
                 <!-- Indikator Kompor / Pendingin di Bawah Gelas -->
-                <div id="stove-indicator" class="w-3/4 h-6 bg-sky-200 rounded-b-2xl border-x-4 border-b-4 border-sky-400 flex items-center justify-center text-xs font-extrabold text-sky-800 transition-colors duration-300 shadow-md">
+                <div id="stove-indicator" class="w-3/4 h-7 bg-sky-200 rounded-b-2xl border-x-4 border-b-4 border-sky-400 flex items-center justify-center text-xs font-extrabold text-sky-800 transition-colors duration-300 shadow-md">
                     ❄️ Mode Pendingin Aktif ❄️
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- HALAMAN 3: LAB SIFAT BENDA (EKSPERIMEN TEKANAN & WADAH) -->
+    <!-- HALAMAN 3: LAB SIFAT BENDA DENGAN BALON -->
     <div id="properties-screen" class="hidden w-full max-w-6xl bg-white/95 backdrop-blur-md rounded-[2.5rem] p-5 md:p-8 shadow-2xl border-4 border-purple-300 flex-col gap-5">
         
         <!-- Baris Atas (Header) -->
@@ -262,11 +241,11 @@
                 <span>🏠</span> Menu Utama
             </button>
             <div class="flex items-center gap-2">
-                <span class="text-3xl">🧪</span>
-                <h2 class="text-2xl md:text-3xl font-title font-bold text-purple-600">Lab Uji Sifat Benda</h2>
+                <span class="text-3xl">🎈</span>
+                <h2 class="text-2xl md:text-3xl font-title font-bold text-purple-600">Lab Uji Sifat Balon Zat</h2>
             </div>
             <div class="hidden md:block text-sm font-bold text-purple-600 bg-purple-50 px-4 py-2 rounded-xl border border-purple-200">
-                🔬 Ayo uji kekuatan benda di dalam tabung!
+                🖐️ Ayo pencet dan miringkan balonnya!
             </div>
         </div>
 
@@ -274,37 +253,37 @@
             <!-- Panel Kontrol Eksperimen (Kiri) -->
             <div class="w-full lg:w-1/3 flex flex-col gap-4 justify-between bg-purple-50/70 p-5 rounded-3xl border-2 border-purple-200">
                 <div>
-                    <h3 class="text-lg font-title font-bold text-slate-700 mb-2">1. Masukkan Benda ke Tabung:</h3>
+                    <h3 class="text-lg font-title font-bold text-slate-700 mb-2">1. Isi Balon Dengan:</h3>
                     <div class="grid grid-cols-3 gap-2 mb-5">
                         <button id="exp-btn-solid" class="btn-cartoon py-3 px-2 rounded-2xl font-extrabold text-sm bg-sky-500 text-white border-sky-700 flex flex-col items-center gap-1 shadow-md">
-                            <span class="text-2xl">🧱</span>
-                            <span>Balok</span>
+                            <span class="text-2xl">🧊</span>
+                            <span>Kelereng Es</span>
                             <span class="text-[10px] opacity-80">(Padat)</span>
                         </button>
                         <button id="exp-btn-liquid" class="btn-cartoon py-3 px-2 rounded-2xl font-extrabold text-sm bg-white text-slate-700 border-slate-300 flex flex-col items-center gap-1 shadow-sm">
-                            <span class="text-2xl">🧃</span>
-                            <span>Sirup</span>
+                            <span class="text-2xl">💧</span>
+                            <span>Air Sirup</span>
                             <span class="text-[10px] opacity-80">(Cair)</span>
                         </button>
                         <button id="exp-btn-gas" class="btn-cartoon py-3 px-2 rounded-2xl font-extrabold text-sm bg-white text-slate-700 border-slate-300 flex flex-col items-center gap-1 shadow-sm">
-                            <span class="text-2xl">🎈</span>
-                            <span>Udara</span>
+                            <span class="text-2xl">💨</span>
+                            <span>Udara Tiup</span>
                             <span class="text-[10px] opacity-80">(Gas)</span>
                         </button>
                     </div>
 
-                    <h3 class="text-lg font-title font-bold text-slate-700 mb-2">2. Lakukan Percobaan Seru:</h3>
+                    <h3 class="text-lg font-title font-bold text-slate-700 mb-2">2. Uji Balon Karet:</h3>
                     <div class="flex flex-col gap-3">
                         <button id="btn-test-compress" class="btn-cartoon w-full py-3 px-4 bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold rounded-2xl border-amber-600 flex items-center justify-between shadow-md">
-                            <span>⬇️ Tekan Alat Pendorong!</span>
-                            <span class="text-xl">🔨</span>
+                            <span>👐 Pencet / Tekan Balon!</span>
+                            <span class="text-xl">⏬</span>
                         </button>
                         <button id="btn-test-tilt" class="btn-cartoon w-full py-3 px-4 bg-teal-400 hover:bg-teal-300 text-slate-900 font-extrabold rounded-2xl border-teal-600 flex items-center justify-between shadow-md">
-                            <span>🔄 Miringkan Gelas Tabung!</span>
+                            <span>🔄 Goyangkan / Miringkan Balon!</span>
                             <span class="text-xl">📐</span>
                         </button>
                         <button id="btn-exp-reset" class="btn-cartoon w-full py-2.5 px-4 bg-rose-100 hover:bg-rose-200 text-rose-700 font-extrabold rounded-2xl border-rose-300 flex items-center justify-center gap-2 text-sm mt-1">
-                            <span>🔄 Kembalikan Seperti Semula</span>
+                            <span>🔄 Lepaskan Tekanan Balon</span>
                         </button>
                     </div>
                 </div>
@@ -312,31 +291,26 @@
                 <!-- Catatan Ilmuwan Cilik -->
                 <div id="exp-conclusion" class="bg-white p-4 rounded-2xl border-4 border-amber-300 shadow-md">
                     <div class="flex items-center gap-2 font-title font-bold text-amber-600 text-base mb-1">
-                        <span>📝</span> Catatan Ilmuwan Cilik:
+                        <span>📝</span> Catatan Eksperimen Balon:
                     </div>
                     <p id="exp-conclusion-text" class="text-xs md:text-sm text-slate-700 font-semibold leading-relaxed">
-                        Pilih benda di atas lalu tekan tombol percobaan untuk melihat keajaiban sifat benda!
+                        Pilih isi balon di atas, lalu coba pencet atau goyangkan balon untuk membuktikan sifat zat!
                     </p>
                 </div>
             </div>
 
-            <!-- Area Tabung Eksperimen (Kanan) -->
+            <!-- Area Balon Eksperimen (Kanan) -->
             <div class="w-full lg:w-2/3 flex items-center justify-center p-2">
-                <div id="exp-canvas-container" class="beaker-container w-full h-[360px] md:h-[440px] overflow-hidden transition-transform duration-500">
-                    <!-- Alat Pendorong (Plunger) -->
-                    <div id="piston-element" class="absolute top-0 left-0 w-full h-12 bg-amber-400 border-b-8 border-amber-600 z-20 transition-all duration-300 flex items-center justify-center shadow-lg" style="transform: translateY(0px);">
-                        <!-- Gagang Pendorong -->
-                        <div class="absolute bottom-full left-1/2 -translate-x-1/2 w-10 h-64 bg-amber-300 border-x-4 border-amber-500"></div>
-                        <span class="font-title font-bold text-xs md:text-sm text-amber-950 bg-white/80 px-4 py-1 rounded-full shadow-sm">
-                            ⬇️ ALAT PENDORONG ⬇️
+                <div id="exp-canvas-container" class="beaker-container w-full h-[380px] md:h-[450px] overflow-hidden transition-transform duration-500">
+                    <!-- Indikator Tangan Penekan Balon -->
+                    <div id="piston-element" class="absolute top-2 left-1/2 -translate-x-1/2 px-6 py-2 bg-amber-400 border-4 border-amber-600 rounded-full z-20 transition-all duration-300 flex items-center justify-center shadow-lg pointer-events-none" style="transform: translate(-50%, -80px); opacity: 0;">
+                        <span class="font-title font-bold text-xs md:text-sm text-amber-950 flex items-center gap-2">
+                            <span>🙌</span> TANGAN MENEKAN BALON <span>🙌</span>
                         </span>
                     </div>
 
-                    <div class="beaker-marks">
-                        <div class="beaker-mark">400 ml</div>
-                        <div class="beaker-mark">300 ml</div>
-                        <div class="beaker-mark">200 ml</div>
-                        <div class="beaker-mark">100 ml</div>
+                    <div class="absolute top-3 left-4 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full border-2 border-purple-200 text-xs font-extrabold text-purple-700 z-10 shadow-sm">
+                        🎈 Balon Karet Transparan
                     </div>
 
                     <canvas id="expCanvas" class="w-full h-full block"></canvas>
@@ -465,6 +439,79 @@
             ctx.fill();
         }
 
+        // Fungsi menggambar Balon Karet Transparan di Kanvas
+        function drawBalloonContainer(ctx, cx, cy, rx, ry, themeColor, strokeColor) {
+            ctx.save();
+
+            // Tali Balon di Bawah
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + ry + 12);
+            ctx.quadraticCurveTo(cx - 18, cy + ry + 35, cx + 8, cy + ry + 58);
+            ctx.strokeStyle = '#94a3b8';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Simpul Ikatan Karet Balon (Segitiga di bawah balon)
+            ctx.beginPath();
+            ctx.moveTo(cx - 14, cy + ry + 14);
+            ctx.lineTo(cx + 14, cy + ry + 14);
+            ctx.lineTo(cx, cy + ry - 2);
+            ctx.closePath();
+            ctx.fillStyle = strokeColor;
+            ctx.fill();
+
+            // Badan Utama Balon (Elips Elastis)
+            ctx.beginPath();
+            ctx.ellipse(cx, cy, rx, ry, 0, 0, Math.PI * 2);
+            ctx.fillStyle = themeColor;
+            ctx.fill();
+            ctx.lineWidth = 6;
+            ctx.strokeStyle = strokeColor;
+            ctx.stroke();
+
+            // Pantulan Kilau Karet Balon
+            ctx.beginPath();
+            ctx.ellipse(cx - rx * 0.52, cy - ry * 0.35, rx * 0.12, ry * 0.24, Math.PI / 6, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.55)';
+            ctx.fill();
+
+            // Cincin Mulut Ikatan Balon
+            ctx.beginPath();
+            ctx.roundRect(cx - 12, cy + ry - 3, 24, 7, 4);
+            ctx.fillStyle = strokeColor;
+            ctx.fill();
+
+            ctx.restore();
+        }
+
+        // Fungsi menjaga agar partikel tetap berada di dalam lengkungan dinding balon (Elips)
+        function constrainToBalloon(p, cx, cy, rx, ry, bounceFactor) {
+            const innerRx = Math.max(30, rx - p.radius - 5);
+            const innerRy = Math.max(30, ry - p.radius - 5);
+            const dx = p.x - cx;
+            const dy = p.y - cy;
+            const normDist = Math.hypot(dx / innerRx, dy / innerRy);
+
+            if (normDist > 1) {
+                const angle = Math.atan2(dy / innerRy, dx / innerRx);
+                p.x = cx + Math.cos(angle) * innerRx;
+                p.y = cy + Math.sin(angle) * innerRy;
+
+                // Vektor normal permukaan elips
+                let nx = Math.cos(angle) / innerRx;
+                let ny = Math.sin(angle) / innerRy;
+                const nLen = Math.hypot(nx, ny) || 1;
+                nx /= nLen;
+                ny /= nLen;
+
+                const dot = p.vx * nx + p.vy * ny;
+                if (dot > 0) {
+                    p.vx -= (1 + bounceFactor) * dot * nx;
+                    p.vy -= (1 + bounceFactor) * dot * ny;
+                }
+            }
+        }
+
         class SimParticle {
             constructor(x, y, radius) {
                 this.x = x;
@@ -491,9 +538,9 @@
 
             update() {
                 const jitter = Math.max(0.2, (temperature + 110) * 0.015);
+                const pad = 16;
 
                 if (currentState === 'solid') {
-                    // Tertahan di formasi dengan getaran kecil
                     const dx = this.targetX - this.x;
                     const dy = this.targetY - this.y;
                     this.vx = dx * 0.2 + (Math.random() - 0.5) * jitter * 2.5;
@@ -501,16 +548,20 @@
                     this.x += this.vx;
                     this.y += this.vy;
                 } else if (currentState === 'liquid') {
-                    // Jatuh ke bawah oleh gravitasi & mengalir bebas
-                    this.vy += 0.35;
+                    this.vy += 0.35; // Gravitasi ke dasar gelas kimia
                     this.vx += (Math.random() - 0.5) * jitter * 0.8;
                     this.vy += (Math.random() - 0.5) * jitter * 0.4;
                     this.vx *= 0.96;
                     this.vy *= 0.96;
                     this.x += this.vx;
                     this.y += this.vy;
+
+                    // Pantulan Dinding Gelas Kimia
+                    if (this.x - this.radius < pad) { this.x = pad + this.radius; this.vx *= -0.6; }
+                    if (this.x + this.radius > simCanvas.width - pad) { this.x = simCanvas.width - pad - this.radius; this.vx *= -0.6; }
+                    if (this.y + this.radius > simCanvas.height - pad) { this.y = simCanvas.height - pad - this.radius; this.vy *= -0.4; }
+                    if (this.y - this.radius < pad) { this.y = pad + this.radius; this.vy *= -0.6; }
                 } else if (currentState === 'gas') {
-                    // Melayang bebas ke seluruh penjuru
                     const speedMultiplier = 1 + Math.max(0, (temperature - 80) * 0.015);
                     this.vx += (Math.random() - 0.5) * 0.6;
                     this.vy += (Math.random() - 0.5) * 0.6;
@@ -522,25 +573,12 @@
                     }
                     this.x += this.vx;
                     this.y += this.vy;
-                }
 
-                // Batas Dinding Gelas Kimia
-                const pad = 14;
-                if (this.x - this.radius < pad) {
-                    this.x = pad + this.radius;
-                    this.vx *= -0.8;
-                }
-                if (this.x + this.radius > simCanvas.width - pad) {
-                    this.x = simCanvas.width - pad - this.radius;
-                    this.vx *= -0.8;
-                }
-                if (this.y - this.radius < pad) {
-                    this.y = pad + this.radius;
-                    this.vy *= -0.8;
-                }
-                if (this.y + this.radius > simCanvas.height - pad) {
-                    this.y = simCanvas.height - pad - this.radius;
-                    this.vy *= currentState === 'gas' ? -0.9 : -0.4;
+                    // Pantulan Penuh di Seluruh Ruang Gelas Kimia
+                    if (this.x - this.radius < pad) { this.x = pad + this.radius; this.vx = Math.abs(this.vx); }
+                    if (this.x + this.radius > simCanvas.width - pad) { this.x = simCanvas.width - pad - this.radius; this.vx = -Math.abs(this.vx); }
+                    if (this.y - this.radius < pad) { this.y = pad + this.radius; this.vy = Math.abs(this.vy); }
+                    if (this.y + this.radius > simCanvas.height - pad) { this.y = simCanvas.height - pad - this.radius; this.vy = -Math.abs(this.vy); }
                 }
             }
         }
@@ -576,13 +614,13 @@
 
         function initSimParticles() {
             simParticles = [];
-            const radius = 14;
-            const cols = 10;
-            const rows = 6;
+            const radius = 13;
+            const cols = 9;
+            const rows = 5;
             const spacing = radius * 2.15;
 
             const startX = (simCanvas.width - (cols - 1) * spacing) / 2;
-            const startY = simCanvas.height - rows * spacing - 20;
+            const startY = simCanvas.height - 40 - (rows - 1) * spacing;
 
             for (let r = 0; r < rows; r++) {
                 for (let c = 0; c < cols; c++) {
@@ -591,13 +629,13 @@
                     const p = new SimParticle(tx, ty, radius);
 
                     if (currentState === 'gas') {
-                        p.x = 30 + Math.random() * (simCanvas.width - 60);
-                        p.y = 30 + Math.random() * (simCanvas.height - 60);
+                        p.x = 40 + Math.random() * (simCanvas.width - 80);
+                        p.y = 40 + Math.random() * (simCanvas.height - 80);
                         p.vx = (Math.random() - 0.5) * 6;
                         p.vy = (Math.random() - 0.5) * 6;
                     } else if (currentState === 'liquid') {
                         p.x = tx + (Math.random() - 0.5) * 15;
-                        p.y = ty - Math.random() * 20;
+                        p.y = ty;
                     }
                     simParticles.push(p);
                 }
@@ -727,6 +765,43 @@
             expCanvas.height = rect.height > 0 ? rect.height : 400;
         }
 
+        // Menghitung bentuk kelenturan balon saat dipencet pada Lab 1
+        function getExpBalloonMetrics() {
+            const cx = expCanvas.width / 2;
+            const cy = expCanvas.height * 0.5;
+            const baseR = Math.min(expCanvas.width, expCanvas.height) * 0.36;
+
+            let rx = baseR * 1.02;
+            let ry = baseR * 1.12;
+            let centerOffsetY = 0;
+
+            if (isCompressed) {
+                if (currentExpState === 'solid') {
+                    // Balon berisi benda padat hampir tidak berubah bentuk saat ditekan
+                    rx = baseR * 1.04;
+                    ry = baseR * 1.08;
+                    centerOffsetY = 4;
+                } else if (currentExpState === 'liquid') {
+                    // Balon air memipih melebar ke samping tapi volumenya tetap (incompressible)
+                    rx = baseR * 1.32;
+                    ry = baseR * 0.85;
+                    centerOffsetY = 26;
+                } else if (currentExpState === 'gas') {
+                    // Balon gas bisa ditekan hingga menyusut/mengecil volumenya (compressible)
+                    rx = baseR * 0.82;
+                    ry = baseR * 0.68;
+                    centerOffsetY = 42;
+                }
+            }
+
+            return {
+                cx,
+                cy: cy + centerOffsetY,
+                rx,
+                ry
+            };
+        }
+
         class ExpParticle {
             constructor(x, y, radius) {
                 this.x = x;
@@ -751,12 +826,8 @@
                 drawCuteParticle(expCtx, this.x, this.y, this.radius, fill, stroke);
             }
 
-            update() {
-                const topLimit = 48 + pistonOffsetPx;
-                const pad = 14;
-
+            update(balloon) {
                 if (currentExpState === 'solid') {
-                    // Tetap kokoh di posisinya
                     const dx = this.originX - this.x;
                     const dy = this.originY - this.y;
                     this.vx = dx * 0.25 + (Math.random() - 0.5) * 0.4;
@@ -764,20 +835,18 @@
                     this.x += this.vx;
                     this.y += this.vy;
                 } else if (currentExpState === 'liquid') {
-                    // Mengalir ke arah miringnya wadah
-                    const gx = isTilted ? -0.45 : 0;
-                    const gy = 0.35;
-                    this.vx += gx + (Math.random() - 0.5) * 0.4;
-                    this.vy += gy + (Math.random() - 0.5) * 0.4;
-                    this.vx *= 0.94;
-                    this.vy *= 0.94;
+                    const gx = isTilted ? -0.48 : 0;
+                    const gy = 0.38;
+                    this.vx += gx + (Math.random() - 0.5) * 0.45;
+                    this.vy += gy + (Math.random() - 0.5) * 0.45;
+                    this.vx *= 0.93;
+                    this.vy *= 0.93;
                     this.x += this.vx;
                     this.y += this.vy;
                 } else if (currentExpState === 'gas') {
-                    // Memantul cepat di ruang yang tersedia
-                    const maxSpd = isCompressed ? 6.5 : 4;
-                    this.vx += (Math.random() - 0.5) * 0.5;
-                    this.vy += (Math.random() - 0.5) * 0.5;
+                    const maxSpd = isCompressed ? 6.5 : 4.2;
+                    this.vx += (Math.random() - 0.5) * 0.55;
+                    this.vy += (Math.random() - 0.5) * 0.55;
                     const spd = Math.hypot(this.vx, this.vy) || 1;
                     if (spd > maxSpd) {
                         this.vx = (this.vx / spd) * maxSpd;
@@ -787,35 +856,22 @@
                     this.y += this.vy;
                 }
 
-                // Tumbukan dengan Dinding & Alat Pendorong
-                if (this.x - this.radius < pad) {
-                    this.x = pad + this.radius;
-                    this.vx *= -0.8;
-                }
-                if (this.x + this.radius > expCanvas.width - pad) {
-                    this.x = expCanvas.width - pad - this.radius;
-                    this.vx *= -0.8;
-                }
-                if (this.y - this.radius < topLimit) {
-                    this.y = topLimit + this.radius;
-                    this.vy = Math.abs(this.vy) * 0.8;
-                }
-                if (this.y + this.radius > expCanvas.height - pad) {
-                    this.y = expCanvas.height - pad - this.radius;
-                    this.vy *= currentExpState === 'gas' ? -0.9 : -0.4;
-                }
+                // Tumbukan dengan Dinding Karet Balon
+                const bounce = currentExpState === 'gas' ? 0.9 : 0.4;
+                constrainToBalloon(this, balloon.cx, balloon.cy, balloon.rx, balloon.ry, bounce);
             }
         }
 
         function initExpParticles() {
             expParticles = [];
-            const radius = 14;
-            const cols = currentExpState === 'gas' ? 7 : 10;
-            const rows = currentExpState === 'gas' ? 5 : 6;
-            const spacing = radius * 2.15;
+            const radius = 12;
+            const cols = currentExpState === 'gas' ? 6 : 8;
+            const rows = currentExpState === 'gas' ? 5 : 5;
+            const spacing = radius * 2.12;
+            const balloon = getExpBalloonMetrics();
 
-            const startX = (expCanvas.width - (cols - 1) * spacing) / 2;
-            const startY = expCanvas.height - rows * spacing - 18;
+            const startX = balloon.cx - ((cols - 1) * spacing) / 2;
+            const startY = balloon.cy + balloon.ry * 0.15 - ((rows - 1) * spacing) / 2;
 
             for (let r = 0; r < rows; r++) {
                 for (let c = 0; c < cols; c++) {
@@ -823,8 +879,10 @@
                     let y = startY + r * spacing;
 
                     if (currentExpState === 'gas') {
-                        x = 30 + Math.random() * (expCanvas.width - 60);
-                        y = 70 + Math.random() * (expCanvas.height - 100);
+                        const angle = Math.random() * Math.PI * 2;
+                        const dist = Math.random() * 0.7;
+                        x = balloon.cx + Math.cos(angle) * (balloon.rx * dist);
+                        y = balloon.cy + Math.sin(angle) * (balloon.ry * dist);
                     }
                     expParticles.push(new ExpParticle(x, y, radius));
                 }
@@ -835,20 +893,41 @@
             if (!isExpRunning) return;
             expCtx.clearRect(0, 0, expCanvas.width, expCanvas.height);
 
+            const balloon = getExpBalloonMetrics();
+            let bFill = 'rgba(56, 189, 248, 0.18)';
+            let bStroke = '#0284c7';
+            if (currentExpState === 'liquid') {
+                bFill = 'rgba(168, 85, 247, 0.18)';
+                bStroke = '#7e22ce';
+            } else if (currentExpState === 'gas') {
+                bFill = 'rgba(245, 158, 11, 0.2)';
+                bStroke = '#d97706';
+            }
+
+            // Gambar Balon Karet di Lab Sifat
+            drawBalloonContainer(expCtx, balloon.cx, balloon.cy, balloon.rx, balloon.ry, bFill, bStroke);
+
             if (currentExpState !== 'solid') {
                 resolveCollisions(expParticles, 0.35);
             }
             for (let i = 0; i < expParticles.length; i++) {
-                expParticles[i].update();
+                expParticles[i].update(balloon);
                 expParticles[i].draw();
             }
             expAnimId = requestAnimationFrame(animateExp);
         }
 
         function updateExpVisuals() {
-            pistonElement.style.transform = `translateY(${pistonOffsetPx}px)`;
+            if (isCompressed) {
+                pistonElement.style.transform = `translate(-50%, ${pistonOffsetPx}px)`;
+                pistonElement.style.opacity = '1';
+            } else {
+                pistonElement.style.transform = 'translate(-50%, -80px)';
+                pistonElement.style.opacity = '0';
+            }
+
             if (isTilted) {
-                expContainer.style.transform = 'rotate(-10deg)';
+                expContainer.style.transform = 'rotate(-12deg)';
             } else {
                 expContainer.style.transform = 'rotate(0deg)';
             }
@@ -859,7 +938,7 @@
             isTilted = false;
             pistonOffsetPx = 0;
             updateExpVisuals();
-            expConclusionText.innerHTML = 'Pilih benda di atas lalu tekan tombol percobaan untuk melihat keajaiban sifat benda!';
+            expConclusionText.innerHTML = 'Pilih isi balon di atas, lalu coba pencet atau goyangkan balon untuk membuktikan sifat zat!';
             initExpParticles();
         }
 
@@ -898,17 +977,16 @@
 
         btnTestCompress.addEventListener('click', () => {
             isCompressed = true;
-            const maxDrop = expCanvas.height - 6 * (14 * 2.15) - 68;
 
             if (currentExpState === 'solid') {
-                pistonOffsetPx = Math.max(40, maxDrop);
-                expConclusionText.innerHTML = '🧱 <b>Balok (Padat) Tidak Bisa Ditekan!</b><br>Alat pendorong tertahan! Bola partikel padat sudah sangat rapat sehingga ukurannya (volumenya) selalu tetap.';
+                pistonOffsetPx = 12;
+                expConclusionText.innerHTML = '🧊 <b>Balon Kelereng Es (Padat) Terasa Keras!</b><br>Saat balon dipencet, bentuk dan ukurannya <b>tetap</b> karena partikel zat padat tersusun sangat rapat dan saling mengunci.';
             } else if (currentExpState === 'liquid') {
-                pistonOffsetPx = Math.max(45, maxDrop + 10);
-                expConclusionText.innerHTML = '🧃 <b>Sirup (Cair) Sulit Ditekan!</b><br>Walaupun cair, bola partikelnya sudah berdekatan sehingga tidak bisa dipadatkan lagi.';
+                pistonOffsetPx = 35;
+                expConclusionText.innerHTML = '💧 <b>Balon Air Sirup (Cair) Melebar ke Samping!</b><br>Bentuk balon berubah memipih mengikuti tekanan tangan, tetapi <b>volumenya tetap</b> (tidak bisa dimampatkan menjadi lebih kecil).';
             } else {
-                pistonOffsetPx = expCanvas.height * 0.52;
-                expConclusionText.innerHTML = '🎈 <b>Udara (Gas) Mudah Ditekan!</b><br>Hebat! Karena jarak antar bola partikel gas sangat renggang, alat pendorong bisa menekan ruangannya menjadi sempit!';
+                pistonOffsetPx = 65;
+                expConclusionText.innerHTML = '🎈 <b>Balon Udara (Gas) Empuk & Mengecil!</b><br>Karena jarak antar partikel gas di dalam balon sangat renggang, balon udara mudah ditekan hingga ukurannya menyusut!';
             }
             updateExpVisuals();
         });
@@ -917,14 +995,14 @@
             isTilted = !isTilted;
             if (isTilted) {
                 if (currentExpState === 'solid') {
-                    expConclusionText.innerHTML = '🧱 <b>Bentuk Balok (Padat) Tetap!</b><br>Meskipun gelas dimiringkan, balok tidak tumpah atau berubah bentuk karena partikelnya saling mengunci kuat!';
+                    expConclusionText.innerHTML = '🧊 <b>Susunan Padat di Dalam Balon Tetap!</b><br>Walaupun balon digoyangkan/dimiringkan, bongkahan es di dalamnya tidak mengalir dan tetap mempertahankan bentuknya!';
                 } else if (currentExpState === 'liquid') {
-                    expConclusionText.innerHTML = '🧃 <b>Sirup (Cair) Mengikuti Bentuk Wadah!</b><br>Lihat! Bola-bola partikel sirup langsung meluncur mengalir ke sudut gelas yang lebih rendah.';
+                    expConclusionText.innerHTML = '💧 <b>Air di Dalam Balon Mengalir!</b><br>Lihat! Partikel air sirup langsung meluncur mengikuti lekukan sisi balon yang paling rendah.';
                 } else {
-                    expConclusionText.innerHTML = '🎈 <b>Udara (Gas) Tetap Memenuhi Ruangan!</b><br>Walau gelas miring, partikel gas tetap terbang bebas ke seluruh bagian tabung.';
+                    expConclusionText.innerHTML = '🎈 <b>Udara Tetap Mengisi Seluruh Ruang Balon!</b><br>Walau balon dimiringkan ke kiri atau kanan, partikel gas tetap terbang bebas memenuhi seluruh isi balon.';
                 }
             } else {
-                expConclusionText.innerHTML = 'Gelas tabung sudah ditegakkan kembali!';
+                expConclusionText.innerHTML = 'Balon sudah dikembalikan ke posisi tegak!';
             }
             updateExpVisuals();
         });
